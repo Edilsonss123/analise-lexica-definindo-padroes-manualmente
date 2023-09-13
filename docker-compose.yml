@@ -1,0 +1,11 @@
+version: '3.6'
+
+services:
+  edilex:
+    container_name: edilex
+    build: 
+      context: ./../
+      dockerfile: DockerFile
+    tty: true
+    volumes:
+      - ./:/projetos/edilex
